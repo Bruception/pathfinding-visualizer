@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Pathfinding Visualizer 🚩</title>
+</head>
+
+<body>
+  <h1 class="title">Pathfinding Visualizer 🚩</h1>
+
+  <div id="container">
+    <table id="tbl"></table>
+    <div id="control">
+      <button class="btn search" type="button" name="button">Search!</button>
+      <button class="btn clear" type="button" name="button">Clear</button>
+
+      <select id="algorithm">
+        <option value="bfs">Breadth-First Search</option>
+        <option value="dfs">Depth-First Search</option>
+        <option value="best">Best-First Search</option>
+        <option value="astar">A* Search</option>
+      </select>
+
+      <select id="speed">
+        <option value="moderate">Moderate</option>
+        <option value="slow">Slow</option>
+        <option value="fast">Fast</option>
+      </select>
+    </div>
+  </div>
+
+  <script src="https://kit.fontawesome.com/1bcfef85a4.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="src/aqueue.js"></script>
+  <script type="text/javascript" src="src/priorityqueue.js"></script>
+  <script type="text/javascript" src="src/pathfinder.js"></script>
+  <script type="text/javascript" src="src/node.js"></script>
+  <script type="text/javascript" src="src/index.js"></script>
+</body>
+
+</html>
