@@ -86,10 +86,11 @@ PriorityQueue.prototype.size = function() {
 };
 
 PriorityQueue.prototype.updatePriority = function(node, priority) {
+  if(this.map[node.key] === undefined) return;
 
   this.heap[this.map[node.key]].priority = priority;
 
-  for(let i = Math.floor(this.heap.size / 2); i >= 0; --i) {
+  for(let i = Math.floor(this.heap.length / 2); i >= 0; --i) {
     this.sink(i);
   }
 };

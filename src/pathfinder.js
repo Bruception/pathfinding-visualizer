@@ -249,8 +249,6 @@ pathfinder.best = function(grid, start, goal) {
       }
     }
   }
-
-  console.log(frontier);
 };
 
 
